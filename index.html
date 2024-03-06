@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Typing speed game using JS</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="bg-gradient-to-r from-orange-300 to-blue-300">
+        <div
+            id="wrapper"
+            class="relative min-h-screen w-screen flex flex-col items-center justify-center"
+        >
+            <input type="text" id="senInput" class="opacity-0 -z-50 absolute top-[43.5%] left-[33%] py-1 px-2 bg-cyan-100 rounded-lg focus:outline-none" autofocus/>
+            <div id="contentBox" class="h-24 px-4 border-2 border-gray-400 rounded-xl bg-gradient-to-r from-amber-200 to-orange-200">
+                <div id="sentenses" class="h-10 w-full text-xl">
+                    
+                </div>
+
+                <div id="impSec" class="pt-2 flex justify-between border-t-2 border-blue-400">
+                    <div id="details" class="flex gap-6">
+                        <div id="timeLeft">
+                            <span>Time Left:</span>
+                            <span><b id="time">60</b></span
+                            >s
+                        </div>
+                        <div id="mistakes">
+                            <span>Mistakes:</span>
+                            <span id="misses">0</span>
+                        </div>
+                        <div id="wpmSEC">
+                            <span>WPM:</span>
+                            <span id="wpm">0</span>
+                        </div>
+                        <div id="cpmSEC">
+                            <span>CPM:</span>
+                            <span id="cpm">0</span>
+                        </div>
+                    </div>
+                    <button id="try" type="button" class="h-7 w-24 ml-4 text-white bg-blue-700 hover:bg-blue-500 active:scale-[0.9] rounded-lg px-2">
+                        Try Again
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
